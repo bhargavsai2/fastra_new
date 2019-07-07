@@ -6886,3 +6886,10 @@ background-position: center center;
     background-color: unset !important;
     color: #354390
 }
+
+@media (max-width: 767px){ 
+.color-white.cus{
+  color: #343e90;
+}
+
+}
