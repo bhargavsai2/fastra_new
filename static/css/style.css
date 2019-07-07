@@ -6875,3 +6875,14 @@ background-position: center center;
   .sm-section-overlay-h-80 { height: 80%; }
   .sm-section-overlay-h-90 { height: 90%; }  
 }
+
+.list-style-3 li:before {
+    content: "\2713";
+    width: 10px;
+     height: auto;
+    position: absolute;
+     top: unset;
+    left: 0;
+    background-color: unset !important;
+    color: #354390
+}
