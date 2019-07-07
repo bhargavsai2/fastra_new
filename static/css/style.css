@@ -6893,3 +6893,7 @@ background-position: center center;
 }
 
 }
+.fixed-header.header-transparent .navbar-brand h5 strong{
+
+color: #343e90 !important;
+}
