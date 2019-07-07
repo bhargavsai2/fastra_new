@@ -53,13 +53,13 @@ a:active {
 .list-style-tag li a,
 .theme-bg-on-hover:hover .theme-bg-hover,
 .portfolio-filter-01 .filter li:after {
-	background-color: #baa256;
+	background-color: #354390;
 }
 
 .btn-primary,
 .m-btn,
 .list-style-4.list-style-color li {
-	border-color: #baa256;	
+	border-color: #354390;	
 }
 
 .border-theme { border-color: #baa256; }
