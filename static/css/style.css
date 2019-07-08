@@ -6935,7 +6935,7 @@ color: #343e90 !important;
 .display-large{
   display: none !important;
 }
-.section-design:before,.section-design1:before,.section-design:after{
+.section-design:before,.section-design1:before,.section-design:after,.section-design1:after{
   content: unset !important;
 }
 
