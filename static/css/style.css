@@ -6973,3 +6973,13 @@ color: #343e90 !important;
     position: absolute;
     z-index: -1;
 }
+
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
