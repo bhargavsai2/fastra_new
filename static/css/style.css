@@ -6615,6 +6615,16 @@ background-position: center center;
 .hidden {
   display: none !important;
 }
+@media screen and (max-width: 1920px) and (min-width: 1600px){
+ .lg-hidden {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1600px) and (min-width: 1359px) {
+.lg-hidden {
+    display: none !important;
+  }
+}
 @media (max-width: 1200px){
  .lg-hidden {
     display: none !important;
@@ -6914,4 +6924,17 @@ color: #343e90 !important;
   .container {
     max-width: 1300px
   }
+}
+.display-small{
+  display: none;
+}
+
+@media (max-width: 767px){ 
+.display-small{
+  display: block !important;
+}
+.display-large{
+  display: none !important;
+}
+
 }
