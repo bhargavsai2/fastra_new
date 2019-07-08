@@ -6935,11 +6935,12 @@ color: #343e90 !important;
 .display-large{
   display: none !important;
 }
-.section-design:before{
-  left: -46% !important;
+.section-design:before,.section-design1:before{
+  content: unset !important;
 }
 
 }
+
 .section-design,.section-design1{
      position: relative; 
      z-index: 2; 
