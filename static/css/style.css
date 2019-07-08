@@ -463,11 +463,17 @@ h6 { font-size: 25px;}
 .main-half-slider .slider {
   height: 750px;
 }
+.main-full-slider .slider {
+  height: 100vh;
+}
 
 @media (max-width: 767px){
   .main-half-slider .slider {
     height: 500px;
   }  
+  .main-full-slider .slider {
+  height: 100vh;
+}
 }
 
 /*===================================
