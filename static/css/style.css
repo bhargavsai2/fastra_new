@@ -6893,13 +6893,12 @@ background-position: center center;
 }
 
 .list-style-3 li:before {
-    content: "\2713";
+       content: "";
     width: 10px;
-     height: auto;
+    height: 1px;
     position: absolute;
-     top: unset;
+    top: 10px;
     left: 0;
-    background-color: unset !important;
     color: #354390
 }
 
@@ -6936,5 +6935,41 @@ color: #343e90 !important;
 .display-large{
   display: none !important;
 }
+.section-design:before{
+  left: -46% !important;
+}
 
+}
+.section-design,.section-design1{
+     position: relative; 
+     z-index: 2; 
+}
+.section-design:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../img/pattern_arrow.png) no-repeat top left;
+}
+.section-design:after {
+    background: url(../img/pattern_box.png) no-repeat bottom right;
+    content: "";
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+.section-design1:after {
+    background: url(../img/pattern_box.png) no-repeat bottom right;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 56%;
+    position: absolute;
+    z-index: -1;
 }
