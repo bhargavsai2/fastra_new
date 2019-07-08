@@ -6935,7 +6935,7 @@ color: #343e90 !important;
 .display-large{
   display: none !important;
 }
-.section-design:before,.section-design1:before{
+.section-design:before,.section-design1:before,.section-design:after{
   content: unset !important;
 }
 
@@ -6983,4 +6983,7 @@ color: #343e90 !important;
 }
 .text-left{
   text-align: left;
+}
+.text-justify{
+  text-align: justify;
 }
