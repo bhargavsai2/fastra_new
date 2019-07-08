@@ -6903,3 +6903,15 @@ background-position: center center;
 
 color: #343e90 !important;
 }
+
+@media screen and (max-width: 1920px) and (min-width: 1600px) {
+  .container {
+    max-width: 1500px
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1359px) {
+  .container {
+    max-width: 1300px
+  }
+}
