@@ -1,17 +1,7 @@
-/*
-===========================================================================
- EXCLUSIVE ON themeforest.net
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- Template Name   : AMIGO - Multi-purpose Template
- Author          : mital_04
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- Copyright (c) 2017 - mital_04
-===========================================================================
-*/
 
 (function($){
 	"use strict";
-	var AMIGO = {};
+	var FASTRA = {};
 	var plugin_track = 'static/plugin/';
 	
 	$.fn.exists = function () {
@@ -21,14 +11,14 @@
 	/* ---------------------------------------------- /*
 	 * Pre load
 	/* ---------------------------------------------- */
-	AMIGO.PreLoad = function() {
+	FASTRA.PreLoad = function() {
 		document.getElementById("loading").style.display = "none"; 
 	}
 
 	/*--------------------
         * Header Class
     ----------------------*/
-    AMIGO.HeaderSticky = function(){
+    FASTRA.HeaderSticky = function(){
         $(".navbar-toggler").on("click", function(a) {
             a.preventDefault(), $("header").addClass("fixed-header")
         });
@@ -37,7 +27,7 @@
     /*--------------------
         * Menu Close
     ----------------------*/
-    AMIGO.MenuClose = function(){
+    FASTRA.MenuClose = function(){
       $('.navbar-nav .nav-link').on('click', function() {
        var toggle = $('.navbar-toggler').is(':visible');
        if (toggle) {
@@ -49,7 +39,7 @@
     /*--------------------
         * Custom Menu
     ----------------------*/
-    AMIGO.MenuCloseCutome = function(){
+    FASTRA.MenuCloseCutome = function(){
       $(".toggler-menu").on('click', function(){
         $(this).toggleClass('open');
         $('.nav_menu_toggle').stop().toggleClass('menu-open');
@@ -68,7 +58,7 @@
 	/* ---------------------------------------------- /*
 	 * Header Height
 	/* ---------------------------------------------- */
-	AMIGO.HeaderHeight = function(){
+	FASTRA.HeaderHeight = function(){
 		var HHeight = $('.header-height .fixed-header-bar').height()
 	    $('header').height(HHeight);	
 	}
@@ -76,7 +66,7 @@
 	/* ---------------------------------------------- /*
 	 * Header Fixed
 	/* ---------------------------------------------- */
-	AMIGO.HeaderFixd = function() {
+	FASTRA.HeaderFixd = function() {
 		var HscrollTop  = $(window).scrollTop();  
 	    if (HscrollTop >= 100) {
 	       $('header').addClass('fixed-header');
@@ -89,7 +79,7 @@
 	/*--------------------
         * One Page
     ----------------------*/
-    AMIGO.OnePage = function(){
+    FASTRA.OnePage = function(){
         $('header a[href*="#"]:not([href="#"]), .got-to a[href*="#"]:not([href="#"])').on('click', function() {
             if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') || location.hostname === this.hostname) {
               var target = $(this.hash);
@@ -108,7 +98,7 @@
 	/* ---------------------------------------------- /*
 	 * Search Box
 	/* ---------------------------------------------- */
-	AMIGO.SearchBox = function() {
+	FASTRA.SearchBox = function() {
 		var SearchToggle = $(".search_click")
 	 	SearchToggle.on("click", function() {
 	        $('.search-box').toggleClass("searh-form-open");
@@ -119,7 +109,7 @@
 	 * Mega Menu
 	/* ---------------------------------------------- */
 
-	AMIGO.MegaMenu = function() {
+	FASTRA.MegaMenu = function() {
 		var mDropdown = $(".m-dropdown-toggle") 
 		mDropdown.on("click", function() {
 	        $(this).parent().toggleClass("open-menu-parent");
@@ -131,7 +121,7 @@
 	/*--------------------
         * Progress Bar 
     ----------------------*/
-    AMIGO.ProgressBar = function(){
+    FASTRA.ProgressBar = function(){
         $(".progress .progress-bar").each(function () {
           var bottom_object = $(this).offset().top + $(this).outerHeight();
           var bottom_window = $(window).scrollTop() + $(window).height();
@@ -147,7 +137,7 @@
     /* ---------------------------------------------- /*
 		* accordion
 	/* ---------------------------------------------- */
-	AMIGO.Accordion = function() {
+	FASTRA.Accordion = function() {
 		$('.accordion').each(function (i, elem) {
 	       	var $elem = $(this),
 	           $acpanel = $elem.find(".acrd-group > .acrd-des"),
@@ -173,7 +163,7 @@
 	/* ---------------------------------------------- /*
 		* Tabs
 	/* ---------------------------------------------- */
-	AMIGO.Tabs = function() {
+	FASTRA.Tabs = function() {
 		$(".tabs-nav").on("click", ".tab-item", function(){
 			var myID = $(this).attr("id");
 			$(this).addClass("active").siblings().removeClass("active");
@@ -184,7 +174,7 @@
 	/*--------------------
     * Counter JS
     ----------------------*/
-	 AMIGO.Counter = function () {
+	 FASTRA.Counter = function () {
 	  var counter = jQuery(".counter");
 	  var $counter = $('.counter');
 	  if(counter.length > 0) {  
@@ -206,7 +196,7 @@
     /*--------------------
     * OwlSlider
     ----------------------*/
-    AMIGO.Owl = function () {
+    FASTRA.Owl = function () {
       var owlslider = jQuery("div.owl-carousel");
       if(owlslider.length > 0) {  
          loadScript(plugin_track + 'owl-carousel/js/owl.carousel.min.js', function() {
@@ -250,7 +240,7 @@
 	/* ---------------------------------------------- /*
      * lightbox gallery
     /* ---------------------------------------------- */
-    AMIGO.Gallery = function() {
+    FASTRA.Gallery = function() {
     	if ($(".lightbox-gallery").exists() || $(".popup-youtube, .popup-vimeo, .popup-gmaps").exists()){
     		loadScript(plugin_track + 'magnific/jquery.magnific-popup.min.js', function() {
     			if($(".lightbox-gallery").exists()){
@@ -285,7 +275,7 @@
     /*--------------------
     * Masonry
     ----------------------*/
-    AMIGO.masonry = function () {
+    FASTRA.masonry = function () {
     	var portfolioWork = $('.portfolio-content');
     	if ($(".portfolio-content").exists()){
     		loadScript(plugin_track + 'isotope/isotope.pkgd.min.js', function() {
@@ -315,7 +305,7 @@
 	/*--------------------
         * Tyoe It
     ----------------------*/
-    AMIGO.mTypeIt = function() {
+    FASTRA.mTypeIt = function() {
     	if ($(".type_it").exists()){
 		loadScript(plugin_track + 'typeit-master/typeit.min.js', function() {
 			if ($(".type_it").exists()){
@@ -360,38 +350,38 @@
 
 	// Window on Load
 	$(window).on("load", function(){
-		AMIGO.PreLoad();
+		FASTRA.PreLoad();
 	});
 	// Document on Ready
 	$(document).on("ready", function(){
-		AMIGO.mTypeIt(),
-		AMIGO.HeaderFixd(),
-		AMIGO.masonry(),
-		AMIGO.OnePage(),
-		AMIGO.Tabs(),
-		AMIGO.Counter(),
-		AMIGO.HeaderHeight(),
-		AMIGO.HeaderSticky(),
-		AMIGO.MenuClose(),
-		AMIGO.MenuCloseCutome(),
-		AMIGO.Gallery(),
-		AMIGO.Accordion(),
-		AMIGO.ProgressBar(),
-		AMIGO.MegaMenu(),
-		AMIGO.Owl(),
-		AMIGO.SearchBox();
+		FASTRA.mTypeIt(),
+		FASTRA.HeaderFixd(),
+		FASTRA.masonry(),
+		FASTRA.OnePage(),
+		FASTRA.Tabs(),
+		FASTRA.Counter(),
+		FASTRA.HeaderHeight(),
+		FASTRA.HeaderSticky(),
+		FASTRA.MenuClose(),
+		FASTRA.MenuCloseCutome(),
+		FASTRA.Gallery(),
+		FASTRA.Accordion(),
+		FASTRA.ProgressBar(),
+		FASTRA.MegaMenu(),
+		FASTRA.Owl(),
+		FASTRA.SearchBox();
 		
 	});
 
 	// Document on Scrool
 	$(window).on("scroll", function(){
-		AMIGO.ProgressBar(),
-		AMIGO.HeaderFixd();
+		FASTRA.ProgressBar(),
+		FASTRA.HeaderFixd();
 	});
 
 	// Window on Resize
 	$(window).on("resize", function(){
-		AMIGO.HeaderHeight();
+		FASTRA.HeaderHeight();
 	});
 
 
